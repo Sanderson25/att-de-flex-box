@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Questão 5</title>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            header, footer {
+                width: 100%;
+                background-color: red;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            main {
+                display: flex;
+                flex: 1;
+            }
+
+            .barra_lateral {
+                width: 200px;
+                background-color: blue;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .barra_lateral div {
+                margin: 10px 0;
+            }
+
+            .area_do_conteudo_principal {
+                background-color: green;
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Cabeçalho</header>
+        <main>
+            <div class="barra_lateral">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </div>
+            <div class="area_do_conteudo_principal">Área do Conteúdo Principal</div>
+        </main>
+        <footer>Rodapé</footer>
+    </body>
+</html>
